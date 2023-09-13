@@ -107,6 +107,31 @@ module.exports = function(RED) {
                                             }
                                         }
                                         break;
+                                        
+                                    case 'state_l1':
+                                        if (payload === 'toggle') {
+                                            if (device.current_values && 'position' in device.current_values) {
+                                                payload = device.current_values.position > 0 ? 'close' : 'open';
+                                            }
+                                        }
+                                        break;
+                                        
+                                    case 'state_l2':
+                                        if (payload === 'toggle') {
+                                            if (device.current_values && 'position' in device.current_values) {
+                                                payload = device.current_values.position > 0 ? 'close' : 'open';
+                                            }
+                                        }
+                                        break;
+                                        
+                                    case 'state_l3':
+                                        if (payload === 'toggle') {
+                                            if (device.current_values && 'position' in device.current_values) {
+                                                payload = device.current_values.position > 0 ? 'close' : 'open';
+                                            }
+                                        }
+                                        break;
+                                        
                                     case 'brightness':
                                         payload = parseInt(payload);
                                         options["state"] = payload>0?"on":"Off";
