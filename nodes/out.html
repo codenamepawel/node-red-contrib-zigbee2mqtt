@@ -159,6 +159,30 @@
                             {'value':'lock', 'label':'Lock'},
                             {'value':'unlock', 'label':'Unlock'}
                         ];
+                    } else if ('state_l1' === value) {
+                        options =  [
+                            {'value':'on', 'label':'On'},
+                            {'value':'off', 'label':'Off'},
+                            {'value':'toggle', 'label':'Toggle'},
+                            {'value':'lock', 'label':'Lock'},
+                            {'value':'unlock', 'label':'Unlock'}
+                        ];
+                    } else if ('state_l2' === value) {
+                        options =  [
+                            {'value':'on', 'label':'On'},
+                            {'value':'off', 'label':'Off'},
+                            {'value':'toggle', 'label':'Toggle'},
+                            {'value':'lock', 'label':'Lock'},
+                            {'value':'unlock', 'label':'Unlock'}
+                        ];
+                    } else if ('state_l3' === value) {
+                        options =  [
+                            {'value':'on', 'label':'On'},
+                            {'value':'off', 'label':'Off'},
+                            {'value':'toggle', 'label':'Toggle'},
+                            {'value':'lock', 'label':'Lock'},
+                            {'value':'unlock', 'label':'Unlock'}
+                        ];		    
                     } else if ('color_temp' === value) {
                         options =  [
                             {'value':'50', 'label':'Cold'},
@@ -242,6 +266,9 @@
                             icon: 'icons/node-red-contrib-zigbee2mqtt/icon.png',
                             options: [
                                 {'value':'state', 'label':'State (on|off|toggle)'},
+                                {'value':'state_l1', 'label':'State_l1 (on|off|toggle)'},
+                                {'value':'state_l2', 'label':'State_l2 (on|off|toggle)'},
+                                {'value':'state_l3', 'label':'State_l3 (on|off|toggle)'},
                                 {'value':'brightness', 'label':'Brightness (0..255)'},
                                 {'value':'brightness_move', 'label':'Brightness Move (-255...255|stop)'},
                                 {'value':'brightness_move_onoff', 'label':'Brightness Move On/Off (-255...255|stop)'},
